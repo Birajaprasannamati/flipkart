@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="sbrowser" value="chrome"/>
+  <test name="firefoxTestcases">
+    <parameter name="sbrowser" value="firefox"/>
+    <classes>
+      <class name="com.flipkart.testcase1.Pacp2_1"/>
+    </classes>
+  </test> <!-- firefoxTestcases -->
+  <test name="chromeTestcases">
+    <parameter name="sbrowser" value="chrome"/>
+    <classes>
+      <class name="com.flipkart.testcase1.Pacp2_1"/>
+    </classes>
+  </test> <!-- chromeTestcases -->
+  <test name="firefoxTestcases(failed)">
+    <parameter name="sbrowser" value="firefox"/>
+    <classes>
+      <class name="com.flipkart.testcase1.Pacp2_1">
+        <methods>
+          <include name="invoke_url"/>
+          <include name="invoke_url"/>
+          <include name="teatcase2"/>
+          <include name="closesetup"/>
+          <include name="closesetup"/>
+          <include name="close"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.flipkart.testcase1.Pacp2_1 -->
+    </classes>
+  </test> <!-- firefoxTestcases(failed) -->
+  <test name="chromeTestcases(failed)">
+    <parameter name="sbrowser" value="chrome"/>
+    <classes>
+      <class name="com.flipkart.testcase1.Pacp2_1">
+        <methods>
+          <include name="invoke_url"/>
+          <include name="invoke_url"/>
+          <include name="teatcase2"/>
+          <include name="closesetup"/>
+          <include name="closesetup"/>
+          <include name="close"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.flipkart.testcase1.Pacp2_1 -->
+    </classes>
+  </test> <!-- chromeTestcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
