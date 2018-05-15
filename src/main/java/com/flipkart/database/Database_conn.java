@@ -13,7 +13,7 @@ public class Database_conn {
 	
 	public static ArrayList<String []> getDbdatast3(final String query) throws Throwable{
 		
-		//database comnnection steup
+		//database comnnection setup done 
 			
 	ArrayList<String[]> records=new ArrayList<String[]>();	
 	Class.forName("net.sourceforge.jtds.jdbc.Driver");
